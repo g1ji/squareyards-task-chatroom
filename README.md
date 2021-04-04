@@ -9,5 +9,8 @@ squareyards task by g1ji
   3.Install node packages by 'npm install'<br/>
   4.Run the app by typing npm start<br/>
   6.Go to http://localhost:3000 from your browser<br/>
+
+# Demo hosted at https://fpmqy.sse.codesandbox.io/
+![Alt text](https://i.ibb.co/VpYxZjY/G1ji-Chatroom.jpg "G1ji-Chatroom")
   
 **Make sure you already installed node js on your machine.(type "node -v" in your command prompt).
