@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/index.js"></script>
+    <title>G1ji Chatroom</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
+        integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf"
+        crossorigin="anonymous"></script>
+</head>
+
+<body style="padding-top: 40px;">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>G1ji Chatroom</h1>
+                <div>
+                    <div class="inlineBlock topAligned"><b>Participants</b><br>
+                        <div id="participants">
+                            <span id="">g1ji</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="messages">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card card-bordered">
+                    <div class="card-header">
+                        <h4 class="card-title">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">Your name:</div>
+                                </div>
+                                <input type="text" class="form-control" value="g1ji" id="name" placeholder="Username">
+                            </div>
+                        </h4>
+                    </div>
+                    <div class="ps-container ps-theme-default ps-active-y" id="chat-content"
+                        style="overflow-y: scroll !important; height:400px !important;">
+                        <div class="media media-chat">
+
+                            <img class="avatar" src="https://avatars.githubusercontent.com/u/28754335?s=60&v=4"
+                                alt="...">
+                            <div class="media-body">
+                                <p>
+                                    let's start ..
+                                </p>
+                                <span class="user-name">
+                                    @no-body
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="publisher bt-1 border-light">
+                        <form id="messageForm">
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="outgoingMessage"
+                                    placeholder="Write something...">
+                                <div class="input-group-prepend">
+                                    <input placeholder="Write something" type="button" value="Send &#x27A4;" disabled=""
+                                        id="send">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
